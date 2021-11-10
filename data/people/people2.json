@@ -1,0 +1,5 @@
+{"name" : "john", "age": 40, "email": "john@gmail.com"}
+{"name" : "mary", "email": "mary@gmail.com", "age": 35 }
+{"name" : "tim", "email": "tim@gmail.com", "age": 15}
+{"name" : "chloe", "email": "chloe@gmail.com", "age": 13}
+{"email": "kelly@gmail.com", "age": 7, "name" : "kelly"}

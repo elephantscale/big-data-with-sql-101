@@ -1,0 +1,5 @@
+{"name" : "john", "email": "john@gmail.com", "age": 40, "address" : {"city": "San Francisco", "state" : "CA"}}
+{"name" : "mary", "email": "mary@gmail.com", "age": 35, "address" : {"city": "San Jose", "state" : "CA"}}
+{"name" : "tim", "email": "tim@gmail.com", "age": 15, "address" : {"city": "Las Vegas", "state" : "NV"}}
+{"name" : "chloe", "email": "chloe@gmail.com", "age": 13, "address" : {"city": "Reno", "state" : "NV"}}
+{"name" : "kelly", "email": "kelly@gmail.com", "age": 7, "address" : {"city": "New York", "state" : "NY"}}
