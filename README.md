@@ -2,6 +2,13 @@
 
 #  Big Data with SQL 101 Labs
 
+
+## Setup
+ * [Setup](./setup.md)
+
+
+## Labs
+
  * [1. Hive Intro](hive/1-intro.md)
  * [2. Star Schema](hive/star-schema/README.md)
  * [3. Hive Billing](hive/2-billing.md)
