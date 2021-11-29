@@ -21,3 +21,21 @@
 
 
 
+## GCP Cluster
+
+There is a GCP cluster that you have bee ngiven in class.  The login name is `ubuntu`, and the password was given.  You will ssh using the IP address provided
+
+```bash
+ssh ubuntu@YOURIPADDRESS
+```
+
+Links for the cluster:
+
+
+HDFS Namenode: 
+http://YOURIPADDRESS:9870/dfshealth.html#tab-overview
+
+YARN Resourceamanager
+
+
+http://YOURIPADDRESS:8088
