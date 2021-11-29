@@ -1,0 +1,8 @@
+{"start_date": "2015-01-01 00:00:36", "end_date": "2015-01-02 00:00:36", "discount": 0.10, "vendor_id": 5}
+{"start_date": "2015-01-02 00:00:36", "end_date": "2015-01-03 00:00:36", "discount": 0.05, "vendor_id": 1}
+{"start_date": "2015-01-03 00:00:36", "end_date": "2015-01-04 00:00:36", "discount": 0.20, "vendor_id": 2}
+{"start_date": "2015-01-04 00:00:36", "end_date": "2015-01-05 00:00:36", "discount": 0.07, "vendor_id": 3}
+{"start_date": "2015-01-05 00:00:36", "end_date": "2015-01-06 00:00:36", "discount": 0.10, "vendor_id": 4}
+{"start_date": "2015-01-06 00:00:36", "end_date": "2015-01-07 00:00:36", "discount": 0.12, "vendor_id": 6}
+{"start_date": "2015-01-07 00:00:36", "end_date": "2015-01-08 00:00:36", "discount": 0.11, "vendor_id": 7}
+{"start_date": "2015-01-08 00:00:36", "end_date": "2015-01-09 00:00:36", "discount": 0.10, "vendor_id": 8}
