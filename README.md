@@ -20,6 +20,11 @@
  * [9. Tez](hive/tez/README.md)
 
 
+## REview
+
+ * [1. HDFS Intro](hdfs/1-hdfs-intro.md)
+
+
 
 ## GCP Cluster
 
