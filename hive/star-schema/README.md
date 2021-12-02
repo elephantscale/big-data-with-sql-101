@@ -32,7 +32,7 @@ Step 0: Ensure your database exists
 -----------------------
 
 First, make sure your database (your name) exists. You should have done this already.
-Try to say USE MY_NAME;  If that doesn't work, then CREATE DATABASE MY_NAME;
+Try to say USE MY_NAME_db;  If that doesn't work, then CREATE DATABASE MY_NAME_db;
 
 -----------------------
 Step 1: Load data into HDFS
@@ -45,8 +45,8 @@ Edit file : `copy-files-to-hdfs.sh`.
 **TODO: Fix the TODO items**
 
 Hint : 
-- Use a text editor's 'replace' option to change MY_NAME  & LOGIN_NAME appropriately. 
-- In vim do `:1,$s/MY_NAME/your name/g`
+- Use a text editor's 'replace' option to change MY_NAME_db  & LOGIN_NAME appropriately. 
+- In vim do `:1,$s/MY_NAME_db/your name/g`
 
 Run the script as follows.
 
@@ -61,7 +61,7 @@ Step 2: Create Hive External Tables
 ----------------------- 
 Edit the file `create-tables.sql`.  
 
-You will need to edit the USE MY_NAME; at the beginning
+You will need to edit the USE MY_NAME_db; at the beginning
 
 Change
 ```sql
@@ -91,7 +91,7 @@ Then, we can examine the table contents.
 
    ```sql
    	hive> 
-          USE MY_NAME; --TODO: Change This
+          USE MY_NAME_db; --TODO: Change This
 	      select * from ClickStream_Fact;
    ```
 
