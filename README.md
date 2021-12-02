@@ -25,6 +25,11 @@
  * [1. HDFS Intro](hdfs/1-hdfs-intro.md)
 
 
+## Sylabus
+
+* [Course Syllabus](https://degreed.com/pathway/79xx73jw9k?orgsso=visa)
+
+
 
 ## GCP Cluster
 
