@@ -16,8 +16,8 @@ Nothing
 `hadoop-adv-labs/3-hive/3.4-schema`
 
 ### Files
-`hadoop-adv-labs/3-hive/3.4-schema/copy_file_to_hdfs.sh`   
-`hadoop-adv-labs/3-hive/3.4-schema/create_table.sql`
+`big-data-with-sql-101/star-schema/copy_file_to_hdfs.sh`   
+`big-data-with-sql-101/create_table.sql`
 
 -----------------------
 ERD for source data
@@ -65,13 +65,13 @@ You will need to edit the USE MY_NAME; at the beginning
 
 Change
 ```sql
-	USE MY_NAME;
+	USE MY_NAME_db;
 ```
 
 To
 
 ```
-	USE <write your name here e.g., tim>;
+	USE <write your name here e.g., tim_db>;
 ```
 
 Then, run the file with hive -f to create htables
@@ -142,7 +142,7 @@ Create a view of the fact table that brings in all the dimensions.  Hive has a k
 
 ```sql
     hive> 
-	      USE MY_NAME; --TODO: Change this
+	      USE MY_NAME_db; --TODO: Change this
 
 	      CREATE VIEW ClickStream_AllDimensions AS
 	      SELECT  
