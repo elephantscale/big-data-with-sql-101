@@ -45,7 +45,5 @@ Links for the cluster:
 HDFS Namenode: 
 http://YOURIPADDRESS:9870/dfshealth.html#tab-overview
 
-YARN Resourceamanager
-
-
+YARN Resourceamanager: 
 http://YOURIPADDRESS:8088
