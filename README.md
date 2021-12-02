@@ -9,6 +9,7 @@
 
 ## Labs
 
+ * [0. HDFS Intro](hdfs/1-hdfs-intro.md)
  * [1. Hive Intro](hive/1-intro.md)
  * [2. Star Schema](hive/star-schema/README.md)
  * [3. Hive Billing](hive/2-billing.md)
