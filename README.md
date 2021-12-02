@@ -33,7 +33,7 @@
 
 ## GCP Cluster
 
-There is a GCP cluster that you have bee ngiven in class.  The login name is `ubuntu`, and the password was given.  You will ssh using the IP address provided
+There is a GCP cluster that you have been given in class.  The login name is `ubuntu`, and the password was given.  You will ssh using the IP address provided
 
 ```bash
 ssh ubuntu@YOURIPADDRESS
