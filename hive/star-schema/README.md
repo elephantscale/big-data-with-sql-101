@@ -13,14 +13,14 @@ it is already divided up as a star Schema.
 Nothing
 
 ### Working directory
-`hadoop-adv-labs/3-hive/3.4-schema`
+`big-data-with-sql-101/hive/star-schema`
 
 ### Files
-`big-data-with-sql-101/star-schema/copy_file_to_hdfs.sh`   
-`big-data-with-sql-101/create_table.sql`
+`./copy_file_to_hdfs.sh`   
+`/create_table.sql`
 
-* [copy_file_to_hdfs.sh](./copy_file_to_hdfs.sh)
-* [create_table.sql](./create_table.sql)
+* [copy_file_to_hdfs.sh](copy_file_to_hdfs.sh)
+* [create_table.sql](create-table.sql)
 
 -----------------------
 ERD for source data
