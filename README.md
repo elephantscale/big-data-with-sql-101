@@ -48,3 +48,20 @@ http://YOURIPADDRESS:9870/dfshealth.html#tab-overview
 
 YARN Resourceamanager: 
 http://YOURIPADDRESS:8088
+
+
+## Changing Beeline logging level
+
+```bash
+cd MY_NAME
+cp /etc/hive/conf/beeline-log4j2.properties.template beeline-log4j2.properties
+```
+
+Use vi or nano to edit the file, and change line 22 to the following:
+
+```console
+property.hive.log.level = INFO
+```
+
+By default it should be WARN
+
