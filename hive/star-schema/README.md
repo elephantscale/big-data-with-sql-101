@@ -16,10 +16,10 @@ Nothing
 `big-data-with-sql-101/hive/star-schema`
 
 ### Files
-`./copy_file_to_hdfs.sh`   
-`/create_table.sql`
+`./copy_files_to_hdfs.sh`   
+`/create-table.sql`
 
-* [copy_file_to_hdfs.sh](copy_file_to_hdfs.sh)
+* [copy_file_to_hdfs.sh](copy_files_to_hdfs.sh)
 * [create_table.sql](create-table.sql)
 
 -----------------------
