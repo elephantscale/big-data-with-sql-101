@@ -60,7 +60,7 @@ SET hive.txn.manager=org.apache.hadoop.hive.ql.lockmgr.DbTxnManager;
 SET hive.support.concurrency=true;
 SET hive.exec.dynamic.partition.mode=nonstrict;
 
-create table transactions_orc  TBLPROPERTIES('transactional'='true') stored as orc as select * from transactions;
+create table transactions_orc stored as orc  TBLPROPERTIES('transactional'='true') as select * from transactions;
 ```
 
 ```sql
