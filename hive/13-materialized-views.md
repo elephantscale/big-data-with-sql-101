@@ -56,6 +56,10 @@ This will actually kick off a tez job, and at the end you will get the count.
 If you do not already have a table called transactions_orc, create it:
 
 ```sql
+SET hive.txn.manager=org.apache.hadoop.hive.ql.lockmgr.DbTxnManager;
+SET hive.support.concurrency=true;
+SET hive.exec.dynamic.partition.mode=nonstrict;
+
 create table transactions_orc  TBLPROPERTIES('transactional'='true') stored as orc as select * from transactions;
 ```
 
