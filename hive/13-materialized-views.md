@@ -52,6 +52,13 @@ This will actually kick off a tez job, and at the end you will get the count.
 
 ## Step 3: Create materialized view:
 
+
+If you do not already have a table called transactions_orc, create it:
+
+```sql
+create table transactions_orc stored as orc as select * from transactions;
+```
+
 ```sql
 create materialized view mv_invoices
 as
