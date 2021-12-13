@@ -56,7 +56,7 @@ This will actually kick off a tez job, and at the end you will get the count.
 If you do not already have a table called transactions_orc, create it:
 
 ```sql
-create table transactions_orc stored as orc as select * from transactions;
+create table transactions_orc  TBLPROPERTIES('transactional'='true') stored as orc as select * from transactions;
 ```
 
 ```sql
