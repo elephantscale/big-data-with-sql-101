@@ -9,6 +9,7 @@
 
 ## Labs
 
+ * [0. HDFS Intro](hdfs/1-hdfs-intro.md)
  * [1. Hive Intro](hive/1-intro.md)
  * [2. Star Schema](hive/star-schema/README.md)
  * [3. Hive Billing](hive/2-billing.md)
@@ -25,10 +26,15 @@
  * [1. HDFS Intro](hdfs/1-hdfs-intro.md)
 
 
+## Sylabus
+
+* [Course Syllabus](https://degreed.com/pathway/79xx73jw9k?orgsso=visa)
+
+
 
 ## GCP Cluster
 
-There is a GCP cluster that you have bee ngiven in class.  The login name is `ubuntu`, and the password was given.  You will ssh using the IP address provided
+There is a GCP cluster that you have been given in class.  The login name is `ubuntu`, and the password was given.  You will ssh using the IP address provided
 
 ```bash
 ssh ubuntu@YOURIPADDRESS
@@ -40,7 +46,22 @@ Links for the cluster:
 HDFS Namenode: 
 http://YOURIPADDRESS:9870/dfshealth.html#tab-overview
 
-YARN Resourceamanager
-
-
+YARN Resourceamanager: 
 http://YOURIPADDRESS:8088
+
+
+## Changing Beeline logging level
+
+```bash
+cd MY_NAME
+cp /etc/hive/conf/beeline-log4j2.properties.template beeline-log4j2.properties
+```
+
+Use vi or nano to edit the file, and change line 22 to the following:
+
+```console
+property.hive.log.level = INFO
+```
+
+By default it should be WARN
+

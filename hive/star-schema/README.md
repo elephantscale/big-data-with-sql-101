@@ -13,11 +13,14 @@ it is already divided up as a star Schema.
 Nothing
 
 ### Working directory
-`hadoop-adv-labs/3-hive/3.4-schema`
+`big-data-with-sql-101/hive/star-schema`
 
 ### Files
-`hadoop-adv-labs/3-hive/3.4-schema/copy_file_to_hdfs.sh`   
-`hadoop-adv-labs/3-hive/3.4-schema/create_table.sql`
+`./copy_files_to_hdfs.sh`   
+`/create-table.sql`
+
+* [copy_file_to_hdfs.sh](copy_files_to_hdfs.sh)
+* [create_table.sql](create-table.sql)
 
 -----------------------
 ERD for source data
@@ -32,7 +35,7 @@ Step 0: Ensure your database exists
 -----------------------
 
 First, make sure your database (your name) exists. You should have done this already.
-Try to say USE MY_NAME;  If that doesn't work, then CREATE DATABASE MY_NAME;
+Try to say USE MY_NAME_db;  If that doesn't work, then CREATE DATABASE MY_NAME_db;
 
 -----------------------
 Step 1: Load data into HDFS
@@ -45,8 +48,8 @@ Edit file : `copy-files-to-hdfs.sh`.
 **TODO: Fix the TODO items**
 
 Hint : 
-- Use a text editor's 'replace' option to change MY_NAME  & LOGIN_NAME appropriately. 
-- In vim do `:1,$s/MY_NAME/your name/g`
+- Use a text editor's 'replace' option to change MY_NAME_db  & LOGIN_NAME appropriately. 
+- In vim do `:1,$s/MY_NAME_db/your name/g`
 
 Run the script as follows.
 
@@ -61,17 +64,17 @@ Step 2: Create Hive External Tables
 ----------------------- 
 Edit the file `create-tables.sql`.  
 
-You will need to edit the USE MY_NAME; at the beginning
+You will need to edit the USE MY_NAME_db; at the beginning
 
 Change
 ```sql
-	USE MY_NAME;
+	USE MY_NAME_db;
 ```
 
 To
 
 ```
-	USE <write your name here e.g., tim>;
+	USE <write your name here e.g., tim_db>;
 ```
 
 Then, run the file with hive -f to create htables
@@ -91,7 +94,7 @@ Then, we can examine the table contents.
 
    ```sql
    	hive> 
-          USE MY_NAME; --TODO: Change This
+          USE MY_NAME_db; --TODO: Change This
 	      select * from ClickStream_Fact;
    ```
 
@@ -142,7 +145,7 @@ Create a view of the fact table that brings in all the dimensions.  Hive has a k
 
 ```sql
     hive> 
-	      USE MY_NAME; --TODO: Change this
+	      USE MY_NAME_db; --TODO: Change this
 
 	      CREATE VIEW ClickStream_AllDimensions AS
 	      SELECT  

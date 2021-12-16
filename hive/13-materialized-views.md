@@ -52,6 +52,17 @@ This will actually kick off a tez job, and at the end you will get the count.
 
 ## Step 3: Create materialized view:
 
+
+If you do not already have a table called transactions_orc, create it:
+
+```sql
+SET hive.txn.manager=org.apache.hadoop.hive.ql.lockmgr.DbTxnManager;
+SET hive.support.concurrency=true;
+SET hive.exec.dynamic.partition.mode=nonstrict;
+
+create table transactions_orc stored as orc  TBLPROPERTIES('transactional'='true') as select * from transactions;
+```
+
 ```sql
 create materialized view mv_invoices
 as
