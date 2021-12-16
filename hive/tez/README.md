@@ -223,7 +223,7 @@ ORC format.
 ```sql
     hive>  
             select clickstream_orc.*, domains.*
-                from clickstream join domains on
+                from clickstream_orc join domains on
                 (clickstream_orc.domain = domains.domain)
                 limit 10;
 ```
