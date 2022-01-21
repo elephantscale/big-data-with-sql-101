@@ -3,19 +3,11 @@
 # Instructor Setup
 
 ### To be completed by Instructor
-
-## 1 - Copy labs to cluster
-```bash
-    # target dir is :  ~/a
-    rsync -avz -e ssh hadoop-labs   user@HADOP-HOST
-    #or
-    scp -r hadoop-labs   user@HADOOP_HOST
-```
-
 ## 2 - Execute the setup script
 
 ``` bash
-    $  cd  ~/hadoop-labs/scripts
+    $  git clone git@github.com:elephantscale/big-data-with-sql-101.git
+    $  cd  ~/big-data-with-sql-101/scripts
 
     $  ./setup-data.sh
 ```

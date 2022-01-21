@@ -21,33 +21,15 @@
  * [9. Tez](hive/tez/README.md)
 
 
-## REview
-
- * [1. HDFS Intro](hdfs/1-hdfs-intro.md)
-
 
 ## Sylabus
 
 * [Course Syllabus](https://degreed.com/pathway/79xx73jw9k?orgsso=visa)
 
 
+## HDP Sandbox
 
-## GCP Cluster
-
-There is a GCP cluster that you have been given in class.  The login name is `ubuntu`, and the password was given.  You will ssh using the IP address provided
-
-```bash
-ssh ubuntu@YOURIPADDRESS
-```
-
-Links for the cluster:
-
-
-HDFS Namenode: 
-http://YOURIPADDRESS:9870/dfshealth.html#tab-overview
-
-YARN Resourceamanager: 
-http://YOURIPADDRESS:8088
+You have been instructed in your [Setup](./setup.md) to use the HDP sandbox.
 
 
 ## Changing Beeline logging level
